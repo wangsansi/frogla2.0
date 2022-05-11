@@ -1,0 +1,12 @@
+.icon-box {
+  text-align: center;
+  padding-top: 30vh;
+}
+.icon-box-title {
+  font-size: 34rpx;
+}
+.icon-box-desc {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #888;
+}

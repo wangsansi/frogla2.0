@@ -1,0 +1,50 @@
+
+.user-register {
+  padding: 30rpx;
+}
+.user-register-main {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 10rpx 40rpx 40rpx;
+}
+.register-item {
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1rpx solid #e7e7e7;
+  align-items: center;
+}
+.item-title {
+  width: 240rpx;
+}
+.item-block {
+  flex: 1
+}
+.item-block switch {
+  width: 300rpx
+}
+.bind-sex-radio-group {
+  display: flex;
+  align-items: center;
+}
+.bind-sex-label {
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}
+.bind-sex-label-name {
+  margin-left: 10rpx;
+}
+.bind-comittee-switch {
+  display: flex;
+  align-items: center;
+}
+.switch-title {
+  width: 72rpx
+}
+.btn-area{
+ margin-top: 100rpx;
+}
+.btn {
+  background-color: var(--main-color); 
+  color: #ffffff;
+}

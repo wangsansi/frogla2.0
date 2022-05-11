@@ -1,0 +1,5 @@
+<view class="list-content container">
+  <view>
+    <ticket-card wx:key="index" wx:for="{{ticketsList}}" ticket="{{item}}" bindcardTap="cardTap" data-id="{{item.id}}"></ticket-card>
+  </view>
+</view>

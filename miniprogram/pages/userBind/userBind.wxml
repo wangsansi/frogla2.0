@@ -1,0 +1,89 @@
+<view class="user-register container">
+  <view class="user-register-main">
+    <form class="register-content" bindsubmit="formSubmit">
+      <view class="register-item">
+        <text class="item-title">用户名</text>
+        <view class="item-block">
+          <input name="userName" type="text" auto-focus placeholder="请输入用户名" />
+        </view> 
+      </view>
+      <view class="register-item">
+        <text class="item-title">密码</text>
+        <view class="item-block">
+          <input name="userName" type="password" auto-focus placeholder="请输入密码" />
+        </view> 
+      </view>
+      <view class="register-item">
+        <text class="item-title">确认密码</text>
+        <view class="item-block">
+          <input name="userName" type="password" auto-focus placeholder="确认密码" />
+        </view> 
+      </view>
+      <view class="register-item">
+        <text class="item-title">真实姓名</text>
+        <view class="item-block">
+          <input name="name" type="text" auto-focus placeholder="请输入姓名" />
+        </view> 
+      </view>
+      <view class="register-item">
+        <text class="item-title">手机号</text>
+        <view class="item-block">
+          <input name="mobile" maxlength="11" type="number" placeholder="请输入手机号"/>
+        </view>   
+      </view>
+      <view class="register-item">
+        <text class="item-title">身份证</text>
+        <view class="item-block">
+          <input maxlength="18" name="idcard" type="idcard" placeholder="请输入身份证号"/>
+        </view>   
+      </view>
+      <view class="register-item">
+        <text class="item-title">性别</text>
+        <view class="item-block">
+          <radio-group name="sex" class="bind-sex-radio-group" bindchange="radioChange">
+            <label class="bind-sex-label" wx:for="{{sexItems}}" wx:key="value">
+              <view class="bind-sex-label-radio">
+                <radio color="var(--main-color)" value="{{item.value}}" checked="{{item.checked}}"/>
+              </view>
+              <view class="bind-sex-label-name">{{item.name}}</view>
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="register-item">
+        <text class="item-title">房号</text>
+        <view class="item-block">
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" name="roomNum">
+            <view class="picker">
+              {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} {{multiArray[2][multiIndex[2]]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="register-item">
+        <text class="item-title">是否业委会</text>
+        <view class="item-block">
+          <view class="bind-comittee-switch">
+            <view class="switch-title">{{comitteeChecked? '是': '否'}}</view>
+            <view class="switch">
+                <switch color="var(--main-color)" name="committee" checked="{{comitteeChecked}}" bindchange="switchChange"/>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="register-item" wx:if="{{comitteeChecked}}">
+        <text class="item-title">业委会职位</text>
+        <view class="item-block">
+          <picker name="committeePositon" mode="selector" bindchange="bindpickerChange" value="{{committeeIndex}}" range="{{committeeArray}}" range-key="name">
+            <view class="picker">
+              {{committeeArray[committeeIndex].name}}
+            </view>
+          </picker>    
+        </view>
+      </view>
+      <view class="btn-area">
+        <button class="btn" formType="submit">确定</button >
+      </view>
+  </form>
+  </view>
+</view>

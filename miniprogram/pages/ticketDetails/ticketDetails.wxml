@@ -1,0 +1,47 @@
+<!--pages/ticketDetails.wxml-->
+<view class="ticket-details container">
+  <view class="ticket-card ticket-detail-card">
+    <view class="ticket-details-steps-block">
+      <view class="ticket-details-steps-status">该工单已完成</view>
+      <t-steps current="2" readonly="true" layout="vertical" class="ticket-steps">
+        <t-step title="2020-02-14 10:22工单创建" />
+        <t-step title="工单进行中" class="ticket-step-process" subStepItems="{{steps2SubItems}}"/>
+        <t-step title="2020-02-14 10:22工单完成" >
+          <view slot="content">搞定</view>
+          <view class="extra-img" slot="extra">
+            <image src="../../images/slider_3.jpeg" alt="image" style="width: 100%" mode="widthFix" />
+            <image src="../../images/slider_2.jpeg" alt="image" style="width: 100%" mode="widthFix" />
+          </view>
+        </t-step>
+      </t-steps>
+    </view>
+  </view>
+  <view class="ticket-card ticket-detail-card" >
+      <view class="ticket-details-item">
+        <text class="ticket-details-item-title">标题：</text>
+        <view class="ticket-details-item-content">
+          <text >{{ticketDetails.title}}</text>
+        </view> 
+      </view>
+      <view class="ticket-details-item">
+        <text class="ticket-details-item-title">内容：</text>
+        <view class="ticket-details-item-content">
+          <text>{{ticketDetails.content}}</text>
+        </view>   
+      </view>
+      <view class="ticket-details-item">
+        <text class="ticket-details-item-title">处理部门：</text>
+        <view class="ticket-details-item-content">
+          <text>{{ticketDetails.department}}</text>
+        </view>
+      </view>
+      <view class="ticket-details-item">
+        <text class="ticket-details-item-title">附件：</text>  
+        <view class="ticket-details-item-content">
+          <image src="{{ticketDetails.attache}}" style="width: 100%" mode="widthFix" />
+          <image src="{{ticketDetails.attache}}" style="width: 100%" mode="widthFix" />
+          <image src="{{ticketDetails.attache}}" style="width: 100%" mode="widthFix" />
+        </view>
+      </view>
+  </view>
+</view>

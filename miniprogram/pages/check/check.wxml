@@ -1,0 +1,9 @@
+<view class="check-container">
+  <view class="icon-box">
+    <icon class="icon-box-img" type="waiting" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">审核中...</view>
+      <view class="icon-box-desc">请耐心等待</view>
+    </view>
+  </view>
+</view>

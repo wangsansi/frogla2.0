@@ -1,0 +1,14 @@
+<!--components/ticketCard/ticketCard.wxml-->
+<view class="ticket-card" wx:key="index" bindtap="cardTap">
+  <view class="ticket-steps">
+    <text>{{ticket.process}}</text>
+  </view>
+  <view class="ticket-info">
+    <view class="ticket-title">{{ticket.title}}</view>
+    <view class="ticket-content">{{ticket.content}}</view>
+    <view class="ticket-content">创建时间：{{ticket.time}}</view>
+  </view>
+  <view class="ticket-operation" wx:if="{{ticket.process === '待分配'}}">
+    <view class="ticket-delete">删除工单</view>
+  </view>
+</view>

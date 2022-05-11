@@ -1,0 +1,17 @@
+<view class="container user-info">
+  <view class="user-info-block top">
+    <view class="avatar-area">
+      <t-avatar icon="user" />
+    </view>
+    <view class="name-area">
+      小兰（业主）
+    </view>
+  </view>
+  <view class="user-info-block">
+    <t-cell title="小区" note="亲亲花园" />
+    <t-cell title="房号" note="4幢3单元301" />
+    <t-cell title="手机号" note="158*****34" />
+    <t-cell title="身份证号" note="31************69" />
+    <t-cell title="性别" note="女" />
+  </view>
+</view>

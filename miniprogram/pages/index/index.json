@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ticket-card": "../../components/ticketCard/ticketCard",
+    "t-icon": "../../tdesign-miniprogram/icon/icon"
+  }
+}

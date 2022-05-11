@@ -1,0 +1,17 @@
+.user-info {
+  padding: 30rpx;
+}
+.user-info-block {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.name-area {
+  font-size: 50rpx;
+  margin-left: 30rpx;
+}
+.user-info-block.top {
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+}

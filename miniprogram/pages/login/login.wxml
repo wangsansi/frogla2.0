@@ -1,0 +1,9 @@
+
+<view class="container">
+  <view class="empty-area">
+    <t-empty icon="info-circle-filled" description="您还没有注册，请先注册">
+      <button style="background-color: #0052D9; color: #ffffff;" slot="action" bindtap="ticketRegister">注册</button>
+    </t-empty>
+  </view>
+</view>
+

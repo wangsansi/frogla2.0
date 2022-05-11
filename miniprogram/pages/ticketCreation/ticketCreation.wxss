@@ -1,0 +1,109 @@
+
+.suggest-section {
+     padding: 30rpx;
+}
+.suggest-main {
+    padding: 40rpx;
+    padding-bottom: 0;
+    border-radius: 10rpx;
+    background-color: white;
+}
+.item-block {
+    display: flex;
+}
+.item-title {
+    width: 120rpx;
+    flex: 0 1 120rpx
+}
+.ticket-title-wrapper {
+    padding: 0 0 30rpx 0;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+.ticket-title-wrapper input {
+    width: 510rpx
+}
+.ticket-content-wrapper {
+    padding-top: 30rpx;
+}
+.ticket-content-wrapper textarea {
+    width: 510rpx;
+    height: 400rpx;
+    padding-bottom: 40rpx;
+    margin-top: -10rpx;
+    margin-left: -10rpx;
+}
+.ticket-category-wrapper {
+    padding:38rpx 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.ticket-category-wrapper radio-group {
+    width: 510rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ticket-category-wrapper label{
+    margin-right: 30rpx;
+    margin-bottom: 20rpx;
+}
+.ticket-pic-wrapper {
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.ticket-pic-wrapper .item-title{
+    margin-top: 18rpx;
+}
+.pic-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 510rpx;
+}
+
+.camera {
+    width: 136rpx;
+    height: 136rpx;
+    border: 1px dashed #9c9a9b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9c9a9b;
+    margin: 18rpx 18rpx 18rpx 0;
+}
+.close {
+    position: absolute;
+    left: -20rpx;
+    top: -28rpx;
+    color: #d32;
+    font-size: 44rpx;
+    z-index: 0;
+}
+.close::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 39rpx;
+    height: 39rpx;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.camera.hide {
+    display: none;
+}
+.camera.show {
+    width: 136rpx;
+    height:136rpx;
+    border:none;
+}
+.camera.add {
+    border: 1px dashed #9c9a9b;
+}
+.suggest-section .submit {
+    width: 600rpx;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 40rpx;
+}

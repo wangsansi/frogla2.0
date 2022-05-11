@@ -1,0 +1,28 @@
+.ticket-details {
+  padding: 30rpx;
+}
+.ticket-detail-card {
+  padding: 30rpx;
+}
+.ticket-details-steps-status {
+  margin-bottom: 40rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  line-height: 58rpx;
+  color: #0052D9;
+}
+.ticket-details-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+.ticket-details-item-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  line-height: 48rpx;
+}
+.ticket-details-item-content {
+  color: #999;
+  font-size: 28rpx;
+  margin: 8rpx 32rpx
+}

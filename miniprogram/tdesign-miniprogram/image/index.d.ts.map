@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/image/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAM,QAAQ,CAAC;AAEtC,oBAAY,UAAU,GAAG,YAAY,CAAC;AACtC,cAAc,SAAS,CAAC;AACxB,cAAc,SAAS,CAAC","file":"index.d.ts","sourcesContent":["import { TdImageProps } from './type';\n\nexport type ImageProps = TdImageProps;\nexport * from './props';\nexport * from './image';\n"]}

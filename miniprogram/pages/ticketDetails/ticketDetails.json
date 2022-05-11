@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "t-steps": "../../tdesign-miniprogram/steps/steps",
+    "t-step": "../../tdesign-miniprogram/steps/step-item"
+  }
+}

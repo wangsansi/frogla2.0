@@ -1,0 +1,18 @@
+<view class="list-content container">
+  <view wx:if="{{ticketsList.length<1}}" class="icon-area-big">
+    <text>您还没有工单</text>
+    <text>如有问题请创建工单</text>
+    <view class="ticket-add-big" bindtap="changeNav">
+      <t-icon name="add" size="140rpx" color="#ffffff"> </t-icon>
+    </view>
+  </view>
+  <view wx:else class="ticket-list-block">
+    <ticket-card wx:key="index" wx:for="{{ticketsList}}" ticket="{{item}}" bindcardTap="cardTap" data-id="{{item.id}}"></ticket-card>
+    <view class="icon-area-small">
+      <view class="ticket-add-small" bindtap="changeNav">
+        <t-icon name="add" size="100rpx" color="#ffffff"> </t-icon>
+      </view>
+    </view>
+    
+  </view>
+</view>
